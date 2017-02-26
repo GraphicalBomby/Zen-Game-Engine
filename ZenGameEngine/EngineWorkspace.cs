@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ZenGameEngine
 {
-    public partial class Form1 : Form
+    public partial class EngineWorkspace : Form
     {
-        public Form1()
+        public EngineWorkspace()
         {
             InitializeComponent();
+        }
+
+        private void reinitalizeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
         }
     }
 }
